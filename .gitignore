@@ -1,0 +1,47 @@
+# Purpose: Ignore patterns for Terraform, Python, Ansible, Kubernetes, and secrets
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+.terraform.lock.hcl
+*.tfvars
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+
+# Ansible
+*.retry
+
+# Kubernetes
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+
+# Secrets and environment
+.env
+.env.*
+secrets/
+credentials.json
+
+# Node (cost reporter / tooling)
+node_modules/
+
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
